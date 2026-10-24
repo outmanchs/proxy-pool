@@ -114,7 +114,7 @@ SUBSCRIBE_FILE = os.path.join(SUBSCRIPTION_DIR, "subscribe.txt")  # 订阅链接
 # 可用环境变量：PROXY_POOL_GATEWAY_USERNAME / PROXY_POOL_GATEWAY_PASSWORD
 # 未设置时回退到占位符，需在启动向导或环境变量中配置真实值。
 GATEWAY_AUTH_ENABLED = True                     # 是否开启账号密码认证
-GATEWAY_USERNAME     = os.environ.get("PROXY_POOL_GATEWAY_USERNAME", "xiaoshuazi_${sessionName}")    # 用户名模板 (导出到 proxy_list.txt 的用户名)
+GATEWAY_USERNAME     = os.environ.get("PROXY_POOL_GATEWAY_USERNAME", "nisuiyi_${sessionName}")    # 用户名模板 (导出到 proxy_list.txt 的用户名)
 GATEWAY_PASSWORD     = os.environ.get("PROXY_POOL_GATEWAY_PASSWORD", "CHANGE_ME")    # 代理访问密码 (指纹浏览器/脚本/proxy_list.txt 所用的代理连接密码)
 
 # ---- 延时 IP 轮换 ----

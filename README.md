@@ -59,7 +59,7 @@
 为避免敏感凭据硬编码，网关认证密码通过环境变量注入。在项目根目录创建 `.env` 文件（参考 `.env.example`）：
 
 ```bash
-PROXY_POOL_GATEWAY_USERNAME=xiaoshuazi_${sessionName}
+PROXY_POOL_GATEWAY_USERNAME=nisuiyi_${sessionName}
 PROXY_POOL_GATEWAY_PASSWORD=你的真实密码
 ```
 
@@ -115,8 +115,8 @@ python start.py
 系统启动后自动在 `proxy_pool/` 目录下生成导出文件：
 - **`proxy_list.txt`**：带认证格式（适合批量导入 AdsPower、Hubstudio、比特指纹浏览器等）
   ```text
-  127.0.0.1:58000:xiaoshuazi_58000:YOUR_PASSWORD
-  127.0.0.1:58001:xiaoshuazi_58001:YOUR_PASSWORD
+  127.0.0.1:58000:nisuiyi_58000:YOUR_PASSWORD
+  127.0.0.1:58001:nisuiyi_58001:YOUR_PASSWORD
   ...
   ```
 - **`静态代理ip.txt`**：纯地址格式
@@ -131,7 +131,7 @@ python start.py
 #### (1) 网关基础信息
 - **HTTP 动态网关**：`http://127.0.0.1:17890`
 - **Mixed (HTTP/SOCKS5) 网关**：`http://127.0.0.1:17891` 或 `socks5://127.0.0.1:17891`
-- **默认认证账号**：`xiaoshuazi`（支持扩展参数）
+- **默认认证账号**：`nisuiyi`（支持扩展参数）
 - **默认认证密码**：由环境变量 `PROXY_POOL_GATEWAY_PASSWORD` 配置（详见「快速上手」），未设置时回退为占位符 `CHANGE_ME`
 
 #### (2) 动态 Session 会话保持与参数解析
@@ -142,8 +142,8 @@ python start.py
 
   # sessid 参数保持相同，代理池将在 TTL 内将请求固定在同一个远端 IP
   proxies = {
-      "http": "http://xiaoshuazi_sessid-wallet01_ttl-300:YOUR_PASSWORD@127.0.0.1:17890",
-      "https": "http://xiaoshuazi_sessid-wallet01_ttl-300:YOUR_PASSWORD@127.0.0.1:17890",
+      "http": "http://nisuiyi_sessid-wallet01_ttl-300:YOUR_PASSWORD@127.0.0.1:17890",
+      "https": "http://nisuiyi_sessid-wallet01_ttl-300:YOUR_PASSWORD@127.0.0.1:17890",
   }
   resp = requests.get("https://api.ipify.org?format=json", proxies=proxies)
   print(resp.json())
