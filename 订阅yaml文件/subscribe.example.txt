@@ -1,0 +1,5 @@
+# 在下方粘贴你的 Clash 订阅链接，每行一个
+# 格式示例：https://example.com/clash.yaml
+# 或者：https://example.com/clash.yaml, 我的机场1
+# 注意：本文件包含你的订阅密钥，请勿提交到公开仓库（已被 .gitignore 排除）
+https://your-subscription-domain.com/api/v1/subscribe?token=YOUR_TOKEN_HERE

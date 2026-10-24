@@ -1,0 +1,42 @@
+# ===== 敏感信息（严禁上传）=====
+# 订阅链接（含 token/密钥）
+订阅yaml文件/subscribe.txt
+subscribe.txt
+
+# 订阅节点配置（服务器地址/UUID/密码）
+订阅yaml文件/*.yaml
+订阅yaml文件/*.yml
+
+# 代理账号密码列表
+proxy_list.txt
+静态代理ip.txt
+
+# 数据库与缓存（含节点和认证信息）
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.db
+
+# 生成产物
+proxy_pool_v3_final.yaml
+pool_config_auth.yaml
+
+# ===== 运行时/系统文件 =====
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+Thumbs.db
+
+# ===== 二进制内核（体积大，通常不纳入 git；需要时可单独发布）=====
+mihomo.exe
+mihomo-darwin-amd64
+mihomo-darwin-arm64
+
+# ===== 环境变量（真实凭据）=====
+.env
+.env.*
+!.env.example
+
+# ===== 本地工作目录 =====
+.workbuddy/

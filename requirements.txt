@@ -1,0 +1,13 @@
+# Proxy Pool v3.0 Final - 项目运行核心依赖
+
+# 1. 异步 Web 框架与控制台后端
+fastapi>=0.110.0
+
+# 2. ASGI 高性能服务器 (带 websockets、uvloop 等加速组件)
+uvicorn[standard]>=0.27.0
+
+# 3. 异步 HTTP 客户端 (用于远程订阅下载、节点并发健康测速)
+aiohttp>=3.9.5
+
+# 4. YAML 配置文件解析与生成引擎
+PyYAML>=6.0.1
